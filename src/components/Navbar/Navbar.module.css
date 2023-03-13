@@ -1,8 +1,37 @@
 .link {
 	text-decoration: none;
 	color: #ff6060;
+	line-height: 142.6%;
 }
 
 nav :nth-child(1) {
 	margin-right: 57px;
+}
+
+/* Tablet format  */
+@media screen and (max-width: 769px) {
+	.link {
+		font-size: 18px;
+	}
+
+	nav {
+		width: fit-content;
+		text-transform: uppercase;
+		text-align: right;
+	}
+
+	nav :nth-child(1) {
+		margin-right: 27px;
+	}
+}
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.link {
+		font-size: 12px;
+	}
+
+	nav :nth-child(1) {
+		margin-right: 10px;
+	}
 }

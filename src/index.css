@@ -1,13 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
-	margin: 40px auto auto auto;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	font-size: 24px;
-	height: 142.6%;
 }
 
 main {
-	width: 1240px;
+	max-width: 1240px;
+	margin: 40px auto 0 auto;
 	height: 100vh;
-	margin: 0 auto;
+}
+
+/* Desktop adjust */
+@media screen and (max-width: 1341px) {
+	main {
+		margin: 40px 50px 0 50px;
+	}
+}
+
+/* Tablet-Mobile format  */
+@media screen and (max-width: 769px) {
+	main {
+		margin: 20px 20px 0 20px;
+	}
 }

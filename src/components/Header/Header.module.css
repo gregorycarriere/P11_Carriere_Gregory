@@ -9,3 +9,19 @@ header {
 	fill: #ff6060;
 	height: 68px;
 }
+
+/* Tablet format */
+@media screen and (max-width: 769px) {
+	.logo {
+		height: 57px;
+		width: auto;
+	}
+}
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.logo {
+		height: 47px;
+		width: 145px;
+	}
+}

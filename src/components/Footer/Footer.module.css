@@ -18,3 +18,15 @@ footer {
 .text {
 	margin: auto 0 29px 0;
 }
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.logo {
+		margin-top: 62px;
+	}
+
+	.text {
+		font-size: 12px;
+		margin: auto 0 62px 0;
+	}
+}
