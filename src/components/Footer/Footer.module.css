@@ -12,21 +12,17 @@ footer {
 	fill: white;
 	width: 122px;
 	height: 39.44px;
-	margin-top: 66px;
+	margin-top: clamp(62px, 4.583vw, 66px);
 }
 
 .text {
 	margin: auto 0 29px 0;
+	font-size: clamp(12px, 1.667vw, 24px);
 }
 
 /* Mobile format */
 @media screen and (max-width: 450px) {
-	.logo {
-		margin-top: 62px;
-	}
-
 	.text {
-		font-size: 12px;
-		margin: auto 0 62px 0;
+		margin-bottom: 62px;
 	}
 }
