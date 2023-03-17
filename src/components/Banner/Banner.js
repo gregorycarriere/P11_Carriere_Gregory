@@ -4,7 +4,6 @@ import styles from "./Banner.module.css";
 export default function Banner(props) {
 	let { pathname } = useLocation();
 
-	console.log(pathname);
 	return (
 		<div
 			className={`${pathname === "/about" ? styles.about_banner : ""} 
