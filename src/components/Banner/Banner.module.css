@@ -1,9 +1,9 @@
 .banner {
-	margin-top: clamp(20px, 4.792vw, 69px);
-	margin-bottom: clamp(22px, 2.986vw, 43px);
+	margin-top: 69px;
+	margin-bottom: clamp(22px, 100%, 43px); /* 2.986vw */
 	height: clamp(111px, 15.486vw, 223px);
-	width: clamp(335px, 86.111vw, 1240px);
-	filter: brightness(70%);
+	width: clamp(335px, 100%, 1240px);
+	position: relative;
 }
 
 .image {
@@ -11,16 +11,57 @@
 	height: 100%;
 	width: 100%;
 	border-radius: 25px;
+	filter: brightness(70%);
 }
 
 .about_banner {
 	height: 223px;
-	margin-top: clamp(20px, 3.472vw, 50px);
-	margin-bottom: clamp(19px, 2.153vw, 31px);
-}
-
-/* .about_image {
+	margin-top: clamp(20px, 100%, 50px); /* 3.472vw */
+	margin-bottom: clamp(19px, 100%, 31px); /* 2.153vw */
 }
 
 .text {
-} */
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 48px;
+	color: white;
+	font-weight: 500;
+}
+
+/* Desktop adjust */
+@media screen and (max-width: 1000px) {
+	.text {
+		font-size: 40px;
+	}
+}
+
+/* Tablet format */
+@media screen and (max-width: 769px) {
+	.banner {
+		margin-top: 20px;
+	}
+
+	.image {
+		border-radius: 10px;
+	}
+
+	.text {
+		top: 40%;
+		font-size: 28px;
+	}
+}
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.text {
+		top: 30%;
+		padding-left: 16px;
+		font-size: 24px;
+		text-align: left;
+		width: 70%;
+		line-height: 100%;
+	}
+}

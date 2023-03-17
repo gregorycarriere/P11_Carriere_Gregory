@@ -9,13 +9,7 @@ export default function Banner(props) {
 		<div
 			className={`${pathname === "/about" ? styles.about_banner : ""} 
 			${styles.banner}`}>
-			<img
-				src={props.url}
-				alt={props.alt}
-				className={`${
-					pathname === "/about" ? styles.about_image : ""
-				} ${styles.image}`}
-			/>
+			<img src={props.url} alt={props.alt} className={styles.image} />
 			<h1 className={styles.text}>{props.text}</h1>
 		</div>
 	);
