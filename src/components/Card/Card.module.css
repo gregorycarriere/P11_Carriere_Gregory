@@ -1,0 +1,51 @@
+.container {
+	width: clamp(335px, 100%, 340px);
+	height: clamp(255px, 23.611vw, 340px);
+	margin: 25px 5px;
+	position: relative;
+	border-radius: 10px;
+}
+
+.container::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 50%,
+		rgba(0, 0, 0, 0.6) 100%
+	);
+	border-radius: 10px;
+}
+
+.container:hover .cover {
+	transform: scale(96%);
+}
+
+.cover {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: all 300ms;
+}
+
+.title {
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	z-index: 1;
+}
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.container {
+		margin: 10px 0;
+	}
+}

@@ -1,0 +1,19 @@
+.cardsGallery {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #f6f6f6;
+	border-radius: 25px;
+	max-width: 1240px;
+	justify-content: space-around;
+	padding-top: 25px;
+	padding-inline: 10px;
+	margin-bottom: 25px;
+}
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.cardsGallery {
+		padding: 0;
+		background-color: inherit;
+	}
+}
