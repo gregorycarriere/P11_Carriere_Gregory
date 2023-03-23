@@ -1,0 +1,66 @@
+.slider {
+	height: clamp(255px, 28.819vw, 415px);
+	position: relative;
+	border-radius: 25px;
+	margin: 25px 0 30px 0;
+}
+
+.image {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	border-radius: 25px;
+}
+
+.arrowIcon {
+	position: absolute;
+	top: 50%;
+	left: 23px;
+	transform: translate(0, -50%);
+	cursor: pointer;
+}
+
+.arrowIconRight {
+	left: auto;
+	right: 23px;
+	transform: rotate(180deg) translateY(50%);
+}
+
+.text {
+	position: absolute;
+	bottom: 5%;
+	left: 49%;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* Tablet format */
+@media screen and (max-width: 769px) {
+	.slider {
+		border-radius: 10px;
+	}
+
+	.image {
+		border-radius: 10px;
+	}
+
+	.arrowIcon {
+		width: 40px;
+		height: auto;
+	}
+}
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.arrowIcon {
+		left: 13px;
+		width: 25px;
+		height: auto;
+	}
+
+	.arrowIconRight {
+		left: auto;
+		right: 13px;
+	}
+}
