@@ -1,7 +1,7 @@
 import styles from "./About.module.css";
 import Banner from "../../components/Banner/Banner";
 import image from "../../assets/img_about.jpg";
-import data from "./AboutData";
+import data from "../../data/AboutData";
 import Dropdown from "../../components/Dropdown/Dropdown";
 
 export default function About() {
