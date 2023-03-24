@@ -1,0 +1,15 @@
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.thirdSection {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 13.6vh;
+}
+
+.tagsList {
+	margin: 20px 0;
+}
