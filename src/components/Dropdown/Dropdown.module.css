@@ -3,6 +3,11 @@
 	margin-bottom: clamp(20px, 2.153vw, 31px);
 }
 
+.wrapperAcc {
+	width: 582px;
+	font-size: 18px;
+}
+
 .header {
 	background-color: #ff6060;
 	border-radius: 5px;
@@ -14,10 +19,17 @@
 	cursor: pointer;
 }
 
+.headerAcc {
+	font-size: 18px;
+	border-radius: 10px;
+}
+
 .title {
 	color: white;
-	font-size: 24px;
-	font-weight: 500;
+}
+
+.titleAcc {
+	font-size: 18px;
 }
 
 .dropdownIcon {
@@ -37,11 +49,21 @@
 
 .text {
 	font-weight: 400;
-	font-size: 24px;
 }
 
-/* .list {
-} */
+.textAcc {
+	font-size: 18px;
+}
+
+.list {
+	list-style: none;
+}
+
+.listItem {
+	padding-bottom: 5px;
+	font-weight: 400;
+	font-size: 18px;
+}
 
 /* Mobile format */
 @media screen and (max-width: 450px) {

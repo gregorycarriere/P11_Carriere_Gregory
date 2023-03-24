@@ -10,19 +10,32 @@ export default function Dropdown(props) {
 	return (
 		<div
 			className={`${styles.wrapper} 
-			${pathname !== "/about" ? styles.wrapperAcc : ""} `}>
-			<div className={styles.header} onClick={() => setIsOpen(!isOpen)}>
-				<h1 className={styles.title}>{props.title}</h1>
+				${pathname === "/about" ? "" : styles.wrapperAcc} `}>
+			<div
+				className={`${styles.header} 
+					${pathname === "/about" ? "" : styles.headerAcc} `}
+				onClick={() => setIsOpen(!isOpen)}>
+				{pathname === "/about" ? (
+					<h1 className={styles.title}>{props.title}</h1>
+				) : (
+					<h2 className={`${styles.title} ${styles.titleAcc}`}>
+						{props.title}
+					</h2>
+				)}
 				<Icon
 					alt="dropdown_icon"
 					className={`${styles.dropdownIcon} 
-					${isOpen && styles.dropdownIconInv}`}
+						${isOpen && styles.dropdownIconInv}`}
 				/>
 			</div>
 			{isOpen && (
 				<div className={styles.content}>
 					{props.title !== "Équipements" ? (
-						<p className={styles.text}>{props.content}</p>
+						<p
+							className={`${styles.text} 
+						${pathname === "/about" ? "" : styles.textAcc} `}>
+							{props.content}
+						</p>
 					) : (
 						<ul className={styles.list}>
 							{props.content.map((item) => {

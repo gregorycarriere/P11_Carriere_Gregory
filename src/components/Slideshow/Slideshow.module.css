@@ -20,6 +20,11 @@
 	cursor: pointer;
 }
 
+.arrowIcon:hover {
+	background-color: #ff6060c5;
+	border-radius: 10px;
+}
+
 .arrowIconRight {
 	left: auto;
 	right: 23px;

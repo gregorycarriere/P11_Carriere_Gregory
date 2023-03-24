@@ -16,6 +16,10 @@
 	text-align: center;
 }
 
+.span {
+	font-size: clamp(18px, 2.5vw, 36px);
+}
+
 .link {
 	margin-top: clamp(133px, 12.639vw, 182px);
 	margin-bottom: 159px;
