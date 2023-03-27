@@ -16,3 +16,15 @@
 	height: 64px;
 	border-radius: 50%;
 }
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.name {
+		font-size: 12px;
+	}
+
+	.image {
+		width: 32px;
+		height: 32px;
+	}
+}

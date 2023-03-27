@@ -58,6 +58,10 @@
 
 /* Mobile format */
 @media screen and (max-width: 450px) {
+	.slider {
+		margin-bottom: 15px;
+	}
+
 	.arrowIcon {
 		left: 13px;
 		width: 25px;
@@ -67,5 +71,9 @@
 	.arrowIconRight {
 		left: auto;
 		right: 13px;
+	}
+
+	.text {
+		font-size: 14px;
 	}
 }

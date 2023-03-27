@@ -4,7 +4,7 @@
 }
 
 .wrapperAcc {
-	width: 582px;
+	width: clamp(335px, 40.417vw, 582px); /* 40.417vw */
 	font-size: 18px;
 }
 
@@ -65,8 +65,19 @@
 	font-size: 18px;
 }
 
+/* Tablet format */
+@media screen and (max-width: 769px) {
+	.wrapperAcc {
+		width: 100%;
+	}
+}
+
 /* Mobile format */
 @media screen and (max-width: 450px) {
+	.headerAcc {
+		border-radius: 5px;
+	}
+
 	.title {
 		font-size: 13px;
 	}
@@ -82,5 +93,10 @@
 
 	.text {
 		font-size: 12px;
+	}
+
+	.listItem {
+		font-size: 12px;
+		padding-bottom: 3px;
 	}
 }

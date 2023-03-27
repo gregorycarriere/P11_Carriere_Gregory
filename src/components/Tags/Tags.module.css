@@ -7,3 +7,18 @@
 	padding: 3px 30px;
 	margin-right: 10px;
 }
+
+/* Tablet adjust */
+@media screen and (max-width: 790px) {
+	.title {
+		font-size: 11px;
+		margin-top: 5px;
+	}
+}
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.title {
+		border-radius: 5px;
+	}
+}

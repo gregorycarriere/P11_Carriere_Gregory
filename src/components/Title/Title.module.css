@@ -4,5 +4,18 @@
 }
 
 .location {
+	margin-top: 8px;
 	font-size: 18px;
+}
+
+/* Mobile format */
+@media screen and (max-width: 450px) {
+	.title {
+		font-size: 18px;
+	}
+
+	.location {
+		font-size: 14px;
+		margin-top: 5px;
+	}
 }
