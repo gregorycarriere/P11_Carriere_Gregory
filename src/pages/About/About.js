@@ -5,6 +5,8 @@ import data from "../../data/AboutData";
 import Dropdown from "../../components/Dropdown/Dropdown";
 
 export default function About() {
+	window.scrollTo(0, 0);
+
 	const dropdownMenu = data.map((item) => {
 		return (
 			<Dropdown key={item.id} title={item.title} content={item.content} />

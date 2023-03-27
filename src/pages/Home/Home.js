@@ -5,6 +5,8 @@ import data from "../../data/logements.json";
 import Card from "../../components/Card/Card";
 
 export default function Home() {
+	window.scrollTo(0, 0);
+
 	const cardsGallery = data.map((card) => {
 		return (
 			<Card

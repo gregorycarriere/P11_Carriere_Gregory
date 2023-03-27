@@ -9,6 +9,7 @@ import Ratings from "../../components/Ratings/Ratings";
 import Dropdown from "../../components/Dropdown/Dropdown";
 
 export default function Accommodation() {
+	window.scrollTo(0, 0);
 	const params = useParams();
 	const logement = data.find((element) => element.id === params.id);
 
