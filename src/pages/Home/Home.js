@@ -5,8 +5,10 @@ import data from "../../data/logements.json";
 import Card from "../../components/Card/Card";
 
 export default function Home() {
+	// Reset la scrollbar en haut de page au chargement
 	window.scrollTo(0, 0);
 
+	// Création de la galerie des cartes de logement à partir des données du fichier logements.JSON
 	const cardsGallery = data.map((card) => {
 		return (
 			<Card

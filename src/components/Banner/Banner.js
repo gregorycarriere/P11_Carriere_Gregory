@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import styles from "./Banner.module.css";
 
 export default function Banner(props) {
+	// Récupération du chemin de l'url
 	let { pathname } = useLocation();
 
 	return (

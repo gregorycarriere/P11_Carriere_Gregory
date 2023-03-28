@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./Error.module.css";
 
 export default function Error() {
+	// Reset la scrollbar en haut de page au chargement
 	window.scrollTo(0, 0);
 
 	return (
